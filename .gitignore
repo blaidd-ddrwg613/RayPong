@@ -1,0 +1,42 @@
+# Build output
+/build/
+/out/
+/cmake-build-*/
+
+# CMake files generated in the project root (if built in-source)
+/CMakeCache.txt
+/CMakeFiles/
+/CMakeUserPresets.json
+/cmake_install.cmake
+/Makefile
+/compile_commands.json
+/*.ninja
+/.ninja_*
+
+# Compiled files
+# (*.obj is not listed because .obj is also a 3D model format)
+*.exe
+*.o
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+*.pdb
+*.ilk
+
+# IDEs
+/.idea/
+/.vs/
+/.vscode/
+*.user
+*.suo
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Keep everything in thirdparty/. raylib is built from it via add_subdirectory,
+# and it ships its own Makefiles and prebuilt libraries.
+!thirdparty/**
